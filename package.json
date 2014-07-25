@@ -1,6 +1,6 @@
 {
   "name": "co-event-wrap",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Wrap `EventEmitter` to support `generator` listener.",
   "main": "index.js",
   "scripts": {

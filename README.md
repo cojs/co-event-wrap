@@ -18,8 +18,6 @@ co-event-wrap
 [david-image]: https://img.shields.io/david/cojs/co-event-wrap.svg?style=flat
 [david-url]: https://david-dm.org/cojs/co-event-wrap
 
-![logo](https://raw.github.com/cojs/co-event-wrap/master/logo.png)
-
 Wrap `EventEmitter` to support `generator` listener.
 
 ## Install
