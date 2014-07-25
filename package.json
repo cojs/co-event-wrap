@@ -1,0 +1,44 @@
+{
+  "name": "co-event-wrap",
+  "version": "0.0.0",
+  "description": "Wrap `EventEmitter` to support `generator` listener.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test-all"
+  },
+  "config": {
+    "cov": {
+      "threshold": 100
+    }
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "co": "*",
+    "autod": "*",
+    "contributors": "*",
+    "cov": "*",
+    "istanbul-harmony": "*",
+    "jshint": "*",
+    "mocha": "*",
+    "should": "~4.0.4"
+  },
+  "homepage": "https://github.com/cojs/co-event-wrap",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cojs/co-event-wrap.git",
+    "web": "https://github.com/cojs/co-event-wrap"
+  },
+  "bugs": {
+    "url": "https://github.com/cojs/co-event-wrap/issues",
+    "email": "fengmk2@gmail.com"
+  },
+  "keywords": [
+    "co-event-wrap"
+  ],
+  "engines": {
+    "node": ">= 0.11.9"
+  },
+  "author": "fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)",
+  "license": "MIT"
+}
