@@ -12,9 +12,9 @@
     }
   },
   "dependencies": {
+    "co": "~3.1.0"
   },
   "devDependencies": {
-    "co": "*",
     "autod": "*",
     "contributors": "*",
     "cov": "*",
