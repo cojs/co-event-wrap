@@ -12,7 +12,7 @@
     }
   },
   "dependencies": {
-    "co": "~3.1.0"
+    "co": "~4.6.0"
   },
   "devDependencies": {
     "autod": "*",
@@ -21,7 +21,7 @@
     "istanbul-harmony": "*",
     "jshint": "*",
     "mocha": "*",
-    "should": "~4.0.4"
+    "should": "~8.0.2"
   },
   "homepage": "https://github.com/cojs/co-event-wrap",
   "repository": {
