@@ -12,13 +12,13 @@
     }
   },
   "dependencies": {
-    "co": "~3.1.0"
+    "co": "4"
   },
   "devDependencies": {
     "autod": "*",
     "contributors": "*",
     "cov": "*",
-    "istanbul-harmony": "*",
+    "istanbul": "*",
     "jshint": "*",
     "mocha": "*",
     "should": "~4.0.4"
@@ -37,7 +37,7 @@
     "co-event-wrap"
   ],
   "engines": {
-    "node": ">= 0.11.9"
+    "node": ">= 4"
   },
   "author": "fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)",
   "license": "MIT"

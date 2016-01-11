@@ -24,12 +24,12 @@ function wrap(emitter) {
   var removeListener = emitter.removeListener;
 
   emitter.on = emitter.addListener = function (type, listener) {
-    var wrapListener = listener;
+    var wrapped = listener;
     if (listener.constructor.name === 'GeneratorFunction') {
-      wrapListener = co(listener);
-      listener.__coEventWrapListener = wrapListener;
+      wrapped = wrapListener(listener);
+      listener.__coEventWrapListener = wrapped;
     }
-    on.call(emitter, type, wrapListener);
+    on.call(emitter, type, wrapped);
   };
 
   emitter.removeListener = function (type, listener) {
@@ -41,10 +41,19 @@ function wrap(emitter) {
 
   emitter.once = function (type, listener) {
     if (listener.constructor.name === 'GeneratorFunction') {
-      listener = co(listener);
+      listener = wrapListener(listener);
     }
     once.call(emitter, type, listener);
   };
 
   return emitter;
 }
+
+function wrapListener(listener) {
+  return function () {
+    var wrapped = co.wrap(listener);
+    wrapped.apply(null, arguments).then(noop);
+  };
+}
+
+function noop() {}

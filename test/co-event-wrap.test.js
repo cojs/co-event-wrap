@@ -115,4 +115,16 @@ describe('co-event-wrap.test.js', function () {
       ev.listeners('data').should.length(0);
     });
   });
+
+  it('should error catched by promise', function(done) {
+    var ev = eventWrap(new EventEmitter());
+    ev.on('data', function* () {
+      throw new Error('error');
+    });
+    process.once('unhandledRejection', function (err) {
+      err.message.should.equal('error');
+      done();
+    });
+    ev.emit('data');
+  });
 });
