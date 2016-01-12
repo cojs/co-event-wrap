@@ -21,7 +21,7 @@
     "istanbul": "*",
     "jshint": "*",
     "mocha": "*",
-    "should": "~4.0.4"
+    "should": "~8.1.1"
   },
   "homepage": "https://github.com/cojs/co-event-wrap",
   "repository": {
